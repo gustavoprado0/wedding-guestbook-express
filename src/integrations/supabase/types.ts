@@ -20,7 +20,6 @@ export type Database = {
           attending: boolean
           child_count: number
           created_at: string
-          email: string
           full_name: string
           id: string
           notes: string | null
@@ -31,7 +30,6 @@ export type Database = {
           attending?: boolean
           child_count?: number
           created_at?: string
-          email: string
           full_name: string
           id?: string
           notes?: string | null
@@ -42,7 +40,6 @@ export type Database = {
           attending?: boolean
           child_count?: number
           created_at?: string
-          email?: string
           full_name?: string
           id?: string
           notes?: string | null

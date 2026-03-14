@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 import Ornament from "./Ornament";
 
 const RSVPSection = () => {
@@ -31,18 +32,32 @@ const RSVPSection = () => {
       return;
     }
     setLoading(true);
-    // Simulated submission — will connect to Lovable Cloud later
-    await new Promise((r) => setTimeout(r, 1000));
-    toast.success("Presença confirmada com sucesso! 🎉");
-    setForm({
-      fullName: "",
-      email: "",
-      phone: "",
-      attending: "yes",
-      adultCount: 1,
-      childCount: 0,
-      notes: "",
+
+    const { error } = await supabase.from("rsvps").insert({
+      full_name: form.fullName.trim(),
+      email: form.email.trim(),
+      phone: form.phone.trim(),
+      attending: form.attending === "yes",
+      adult_count: form.attending === "yes" ? form.adultCount : 0,
+      child_count: form.attending === "yes" ? form.childCount : 0,
+      notes: form.notes.trim() || null,
     });
+
+    if (error) {
+      console.error("RSVP error:", error);
+      toast.error("Erro ao confirmar presença. Tente novamente.");
+    } else {
+      toast.success("Presença confirmada com sucesso! 🎉");
+      setForm({
+        fullName: "",
+        email: "",
+        phone: "",
+        attending: "yes",
+        adultCount: 1,
+        childCount: 0,
+        notes: "",
+      });
+    }
     setLoading(false);
   };
 

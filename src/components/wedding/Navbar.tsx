@@ -51,7 +51,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <button
               key={item.href}
-              onClick={() => scrollTo(item.href)}
+              onClick={() => scrollTo(item)}
               className="block w-full text-left py-3 text-primary-foreground/80 text-xs tracking-[0.2em] font-sans"
             >
               {item.label}

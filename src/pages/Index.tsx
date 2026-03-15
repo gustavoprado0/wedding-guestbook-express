@@ -5,6 +5,7 @@ import VenueSection from "@/components/wedding/VenueSection";
 import CountdownSection from "@/components/wedding/CountdownSection";
 import RSVPSection from "@/components/wedding/RSVPSection";
 import Footer from "@/components/wedding/Footer";
+import GiftSection from "@/components/wedding/GiftSection";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <AboutSection />
       <VenueSection />
       <CountdownSection />
+      <GiftSection />
       <RSVPSection />
       <Footer />
     </div>

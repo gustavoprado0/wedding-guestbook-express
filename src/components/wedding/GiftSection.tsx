@@ -51,7 +51,7 @@ const gifts = [
 
 const GiftSection = () => {
   return (
-    <section id="presentes" className="py-20 bg-wedding-dark">
+    <section id="presentes" className="py-20 bg-secondary/30">
       <div className="max-w-5xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -60,9 +60,9 @@ const GiftSection = () => {
           className="text-center mb-12"
         >
           <Ornament />
-          <Gift className="mx-auto mb-4 text-wedding-olive" size={36} />
-          <h2 className="font-serif text-4xl text-primary-foreground mb-4">Lista de Presentes</h2>
-          <p className="text-primary-foreground/60 font-sans leading-relaxed max-w-lg mx-auto">
+          <Gift className="mx-auto mb-4 text-wedding-dark" size={36} />
+          <h2 className="font-serif text-4xl text-foreground mb-4">Lista de Presentes</h2>
+          <p className="text-muted-foreground font-sans leading-relaxed max-w-lg mx-auto">
             Sua presença é o nosso maior presente! Mas se quiser nos presentear,
             preparamos esta lista com muito carinho.
           </p>
@@ -79,26 +79,26 @@ const GiftSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="group block rounded-lg border border-primary-foreground/10 bg-primary-foreground/5 p-5 hover:bg-primary-foreground/10 hover:border-wedding-olive/40 transition-all duration-300"
+              className="group block rounded-lg border-2 border-wedding-dark/20 bg-card p-5 hover:border-wedding-dark/50 hover:shadow-lg transition-all duration-300"
             >
               <div className="text-3xl mb-3">{gift.emoji}</div>
-              <h3 className="font-serif text-lg text-primary-foreground group-hover:text-wedding-olive transition-colors leading-snug mb-1">
+              <h3 className="font-serif text-lg text-foreground group-hover:text-wedding-dark transition-colors leading-snug mb-1">
                 {gift.name}
               </h3>
-              <p className="text-primary-foreground/50 text-sm font-sans mb-3 leading-relaxed">
+              <p className="text-muted-foreground text-sm font-sans mb-3 leading-relaxed">
                 {gift.description}
               </p>
               <div className="flex items-center justify-between">
-                <span className="text-xs text-primary-foreground/40 tracking-wider font-sans uppercase">
+                <span className="text-xs text-wedding-dark/50 tracking-wider font-sans uppercase">
                   {gift.store}
                 </span>
                 {gift.price && (
-                  <span className="text-sm font-sans font-medium text-primary-foreground/80">
+                  <span className="text-sm font-sans font-medium text-wedding-dark">
                     {gift.price}
                   </span>
                 )}
               </div>
-              <div className="mt-3 flex items-center gap-1 text-wedding-olive text-xs font-sans font-medium">
+              <div className="mt-3 flex items-center gap-1 text-wedding-dark text-xs font-sans font-medium">
                 <ExternalLink size={12} />
                 Ver na loja
               </div>
@@ -114,7 +114,7 @@ const GiftSection = () => {
         >
           <Link
             to="/presentes"
-            className="inline-block text-wedding-olive hover:text-wedding-olive/80 font-sans text-sm tracking-wider transition-colors underline underline-offset-4"
+            className="inline-block text-wedding-dark hover:text-wedding-dark/70 font-sans text-sm tracking-wider transition-colors underline underline-offset-4"
           >
             Ver lista completa →
           </Link>

@@ -85,20 +85,20 @@ const GiftSection = () => {
               <h3 className="font-serif text-lg text-foreground group-hover:text-wedding-dark transition-colors leading-snug mb-1">
                 {gift.name}
               </h3>
-              <p className="text-primary-foreground/50 text-sm font-sans mb-3 leading-relaxed">
+              <p className="text-muted-foreground text-sm font-sans mb-3 leading-relaxed">
                 {gift.description}
               </p>
               <div className="flex items-center justify-between">
-                <span className="text-xs text-primary-foreground/40 tracking-wider font-sans uppercase">
+                <span className="text-xs text-wedding-dark/50 tracking-wider font-sans uppercase">
                   {gift.store}
                 </span>
                 {gift.price && (
-                  <span className="text-sm font-sans font-medium text-primary-foreground/80">
+                  <span className="text-sm font-sans font-medium text-wedding-dark">
                     {gift.price}
                   </span>
                 )}
               </div>
-              <div className="mt-3 flex items-center gap-1 text-wedding-olive text-xs font-sans font-medium">
+              <div className="mt-3 flex items-center gap-1 text-wedding-dark text-xs font-sans font-medium">
                 <ExternalLink size={12} />
                 Ver na loja
               </div>
@@ -114,7 +114,7 @@ const GiftSection = () => {
         >
           <Link
             to="/presentes"
-            className="inline-block text-wedding-olive hover:text-wedding-olive/80 font-sans text-sm tracking-wider transition-colors underline underline-offset-4"
+            className="inline-block text-wedding-dark hover:text-wedding-dark/70 font-sans text-sm tracking-wider transition-colors underline underline-offset-4"
           >
             Ver lista completa →
           </Link>

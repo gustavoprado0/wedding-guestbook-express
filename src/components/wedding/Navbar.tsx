@@ -12,10 +12,15 @@ const navItems = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const scrollTo = (href: string) => {
+  const scrollTo = (item: typeof navItems[0]) => {
     setOpen(false);
-    const el = document.querySelector(href);
+    if (item.isRoute) {
+      navigate(item.href);
+      return;
+    }
+    const el = document.querySelector(item.href);
     el?.scrollIntoView({ behavior: "smooth" });
   };
 

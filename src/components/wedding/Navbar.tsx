@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const navItems = [
   { label: "SOBRE O NOSSO DIA", href: "#sobre" },
   { label: "CERIMÔNIA E RECEPÇÃO", href: "#cerimonia" },
   { label: "NOSSA DATA", href: "#data" },
   { label: "CONFIRMAÇÃO DE PRESENÇA", href: "#confirmacao" },
+  { label: "LISTA DE PRESENTES", href: "/presentes", isRoute: true },
 ];
 
 const Navbar = () => {

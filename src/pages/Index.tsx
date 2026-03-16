@@ -6,7 +6,6 @@ import CountdownSection from "@/components/wedding/CountdownSection";
 import RSVPSection from "@/components/wedding/RSVPSection";
 import GiftSection from "@/components/wedding/GiftSection";
 import Footer from "@/components/wedding/Footer";
-import GiftSection from "@/components/wedding/GiftSection";
 
 const Index = () => {
   return (

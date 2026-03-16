@@ -195,7 +195,7 @@ const RSVPSection = () => {
                 className="space-y-6 overflow-hidden"
               >
                 {/* Contagens */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Label className="text-xs tracking-widest uppercase font-sans text-muted-foreground">
                       Adultos (incluindo você)

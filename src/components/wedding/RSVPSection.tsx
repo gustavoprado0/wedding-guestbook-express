@@ -84,11 +84,12 @@ const RSVPSection = () => {
 
     const { error } = await supabase.from("rsvps").insert({
       full_name: form.fullName.trim(),
-      email: "",
       phone: form.phone.trim(),
       attending: form.attending === "yes",
       adult_count: form.attending === "yes" ? adultCount : 0,
       child_count: form.attending === "yes" ? childCount : 0,
+      adult_names: form.attending === "yes" ? allGuests : [],
+      child_names: form.attending === "yes" ? allChildren : [],
       notes: form.notes.trim() || null,
     });
 

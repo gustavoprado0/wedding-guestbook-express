@@ -1,26 +1,19 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 const navItems = [
   { label: "SOBRE O NOSSO DIA", href: "#sobre" },
   { label: "CERIMÔNIA E RECEPÇÃO", href: "#cerimonia" },
   { label: "NOSSA DATA", href: "#data" },
   { label: "CONFIRMAÇÃO DE PRESENÇA", href: "#confirmacao" },
-  { label: "LISTA DE PRESENTES", href: "/presentes", isRoute: true },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
 
-  const scrollTo = (item: typeof navItems[0]) => {
+  const scrollTo = (href: string) => {
     setOpen(false);
-    if (item.isRoute) {
-      navigate(item.href);
-      return;
-    }
-    const el = document.querySelector(item.href);
+    const el = document.querySelector(href);
     el?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -31,7 +24,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li key={item.href}>
               <button
-                onClick={() => scrollTo(item)}
+                onClick={() => scrollTo(item.href)}
                 className="text-primary-foreground/80 hover:text-primary-foreground text-xs tracking-[0.2em] font-sans font-medium transition-colors"
               >
                 {item.label}
@@ -51,7 +44,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <button
               key={item.href}
-              onClick={() => scrollTo(item)}
+              onClick={() => scrollTo(item.href)}
               className="block w-full text-left py-3 text-primary-foreground/80 text-xs tracking-[0.2em] font-sans"
             >
               {item.label}

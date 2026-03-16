@@ -6,6 +6,7 @@ const navItems = [
   { label: "CERIMÔNIA E RECEPÇÃO", href: "#cerimonia" },
   { label: "NOSSA DATA", href: "#data" },
   { label: "CONFIRMAÇÃO DE PRESENÇA", href: "#confirmacao" },
+  { label: "LISTA DE PRESENTES", href: "#presentes"}
 ];
 
 const Navbar = () => {

@@ -1,6 +1,7 @@
-import { ExternalLink, Gift } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import Ornament from "./Ornament";
+
 const gifts = [
     {
         name: "Lista de Presentes Camicado",
@@ -14,6 +15,7 @@ const gifts = [
         description: "Aspirador sem fio 2 em 1, prático para o dia a dia.",
         store: "",
         url: "https://loja.electrolux.com.br/aspirador-de-po-2-em-1-ergorapido-branco-erg21/p",
+        url2: "https://www.mercadolivre.com.br/p/MLB14155420?pdp_filters=item_id:MLB1719272833&matt_tool=38524122#origin=share&sid=share&wid=MLB1719272833&action=copy",
         image: "/aspirador.jpeg",
     },
     {
@@ -44,6 +46,98 @@ const gifts = [
         url: "https://www.casasbahia.com.br/secadora-electrolux-stl11-essential-care-11kg-branca-110v/p/55005281",
         image: "/secadora.jpeg",
     },
+
+    {
+        name: "Cama Box Baú Casal + Colchão Ortobom",
+        description: "Cama box baú casal bege com colchão Ortobom Airtech de molas ensacadas.",
+        store: "",
+        url: "https://www.madeiramadeira.com.br/cama-box-bau-casal-bege-e-colchao-ortobom-airtech-molas-ensacadas-368730425.html",
+        image: "/cama.jpeg",
+    },
+    {
+        name: "Geladeira Frost Free Electrolux 400L",
+        description: "Refrigerador duplex IF44S frost free 400L em inox.",
+        store: "",
+        url: "https://www.magazineluiza.com.br/geladeira-refrigerador-electrolux-frost-free-duplex-400l-if44s/p/241075900/ed/refr/",
+        image: "/geladeira.jpeg",
+    },
+    {
+        name: "Micro-ondas Philco 20L",
+        description: "Micro-ondas 20L com função tira-odor para o dia a dia.",
+        store: "",
+        url: "https://www.casasbahia.com.br/micro-ondas-pmo23eb-20l-com-funcao-tira-odor-philco/p/1521087602",
+        image: "/microondas.jpeg",
+    },
+    {
+        name: "Lavadora Electrolux Efficient 14,5kg",
+        description: "Lavadora com cesto inox, Ultra Filter e tecnologia Jet Clean preta.",
+        store: "",
+        url: "https://www.casasbahia.com.br/lavadora-de-roupas-electrolux-efficient-lep15-145kg-com-cesto-inox-ultra-filter-e-tecnologia-jet-clean-preta/p/55069208",
+        image: "/maquina-lavar.jpeg",
+    },
+    {
+        name: "Ferro de Passar",
+        description: "Ferro de passar roupa para deixar tudo sempre bem apresentado.",
+        store: "",
+        url: "https://a.co/d/03wQCe7M",
+        image: "/ferro-passar.jpeg",
+    },
+    {
+        name: "Fogão",
+        description: "Fogão para tornar a cozinha ainda mais completa.",
+        store: "",
+        url: "https://a.co/d/0gxOi3py",
+        image: "/fogao.jpeg",
+    },
+    {
+        name: "Airfryer",
+        description: "Airfryer para preparar refeições saudáveis e saborosas.",
+        store: "",
+        url: "https://a.co/d/0fBsVEnr",
+        image: "/airfreyr.jpeg",
+    },
+    {
+        name: "Tapete",
+        description: "Tapete para deixar os ambientes mais aconchegantes.",
+        store: "",
+        url: "https://a.co/d/0e0uH0ns",
+        image: "/tapete.jpeg",
+    },
+    {
+        name: "Kit Talher",
+        description: "Kit de talheres completo para as refeições do nosso lar.",
+        store: "",
+        url: "https://a.co/d/0gU8Qxsa",
+        image: "/kit-talher.jpeg",
+    },
+    {
+        name: "Sanduicheira",
+        description: "Sanduicheira para cafés da manhã e lanches práticos.",
+        store: "",
+        url: "https://www.amazon.com.br/dp/B0CCBYBPPQ?ref_=cm_sw_r_cso_cp_mwn_dp_C1JWKDA20F4P6MK7RD10_1",
+        image: "/sanduicheira.jpeg",
+    },
+    {
+        name: "Liquidificador",
+        description: "Liquidificador potente para sucos, vitaminas e muito mais.",
+        store: "",
+        url: "https://a.co/d/0iITFtIt",
+        image: "/liquidificador.jpeg",
+    },
+    {
+        name: "Jogo de Cama",
+        description: "Jogo de cama completo para noites mais confortáveis.",
+        store: "",
+        url: "https://a.co/d/09bfRwaq",
+        image: "/jogo-cama.jpeg",
+    },
+    {
+        name: "Edredom Casal Malha Premium",
+        description: "Edredom casal 100% algodão fio penteado para noites aconchegantes.",
+        store: "",
+        url: "https://www.zelo.com.br/edredom-zelo-malha-premium-casal-100-algodao-fio-penteado-p1011587",
+        image: "/edredom.jpeg",
+    },
 ];
 
 export const GiftSection = () => {
@@ -57,66 +151,68 @@ export const GiftSection = () => {
                     className="text-center mb-12"
                 >
                     <Ornament />
-                    <h2 className="font-serif text-4xl text-foreground mb-4">Lista de Presentes</h2>
+                    <h2 className="font-serif text-4xl text-foreground mb-4">
+                        Lista de Presentes
+                    </h2>
                     <p className="text-muted-foreground font-sans leading-relaxed max-w-lg mx-auto">
                         Sua presença é o nosso maior presente! Mas se quiser nos presentear,
                         preparamos esta lista com muito carinho.
                     </p>
                 </motion.div>
-                <div className="
-                    flex gap-4 overflow-x-auto pb-4
-                    sm:grid sm:grid-cols-2
-                    lg:grid-cols-3
-                    ">
+
+                <div className="flex gap-4 overflow-x-auto pb-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
                     {gifts.map((gift, i) => (
-                        <motion.a
+                        <motion.div
                             key={i}
-                            href={gift.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.08 }}
-                          className="group min-w-[260px] sm:min-w-0 block rounded-lg border border-border bg-card p-5 hover:shadow-lg hover:border-border transition-all duration-300"
+                            className="group min-w-[260px] sm:min-w-0 rounded-lg border border-border bg-card p-5 hover:shadow-lg transition-all duration-300 flex flex-col"
                         >
                             <img
                                 src={gift.image}
                                 alt={gift.name}
                                 className="w-full h-40 object-contain mb-3"
                             />
-                            <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors leading-snug mb-1">
+
+                            <h3 className="text-lg text-foreground group-hover:text-accent transition-colors leading-snug mb-1">
                                 {gift.name}
                             </h3>
-                            <p className="text-muted-foreground text-sm font-sans mb-3 leading-relaxed">
+
+                            <p className="text-muted-foreground text-sm font-sans mb-3 leading-relaxed flex-1">
                                 {gift.description}
                             </p>
-                            <div className="flex items-center justify-between">
-                                <span className="text-xs text-muted-foreground tracking-wider font-sans uppercase">
-                                    {gift.store}
-                                </span>
-                                <div className="flex items-center justify-between">
-                                    <span className="text-xs text-muted-foreground tracking-wider font-sans uppercase">
-                                        {gift.store}
-                                    </span>
-                                </div>
+
+                            <div className="mt-3 flex items-center gap-4 flex-wrap">
+                                <a
+                                    href={gift.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-1 text-accent text-xs font-sans font-medium hover:underline"
+                                >
+                                    <ExternalLink size={12} />
+                                    Ver na loja
+                                </a>
+
+                                {gift.url2 && (
+                                    <a
+                                        href={gift.url2}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-1 text-accent text-xs font-sans font-medium hover:underline"
+                                    >
+                                        <ExternalLink size={12} />
+                                        Ver no Mercado Livre
+                                    </a>
+                                )}
                             </div>
-                            <div className="mt-3 flex items-center gap-1 text-accent text-xs font-sans font-medium">
-                                <ExternalLink size={12} />
-                                Ver na loja
-                            </div>
-                        </motion.a>
+                        </motion.div>
                     ))}
                 </div>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    className="text-center mt-10"
-                >
-                </motion.div>
             </div>
         </section>
     );
 };
-export default GiftSection; 
+
+export default GiftSection

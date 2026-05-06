@@ -201,7 +201,7 @@ export const GiftSection = () => {
                 >
                     <Ornament />
                     <h2 className="font-serif text-4xl text-foreground mb-4">
-                        Lista de Presentes
+                        Listas de Presentes
                     </h2>
                     <p className="text-muted-foreground font-sans leading-relaxed max-w-lg mx-auto">
                         Sua presença é o nosso maior presente! Mas se quiser nos presentear,

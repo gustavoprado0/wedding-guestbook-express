@@ -103,13 +103,62 @@ const gifts = [
         url: "https://a.co/d/0e0uH0ns",
         image: "/tapete.jpeg",
     },
+
     {
-        name: "Kit Talher",
-        description: "Kit de talheres completo para as refeições do nosso lar.",
+        name: "Rack Suspenso Paris Off White",
+        description: "Rack suspenso para painel ou TV até 55 polegadas, 2 portas, 1,10m, cor Off White Paris.",
         store: "",
-        url: "https://a.co/d/0gU8Qxsa",
-        image: "/kit-talher.jpeg",
+        url: "https://br.shp.ee/9MnqFQ3d",
+        image: "/rack.jpeg",
     },
+
+    {
+        name: "Kit 6 Quadros Decorativos Personalizados",
+        description: "Kit com 6 quadros decorativos personalizados com foto e moldura premium. Disponível em moldura branca, preta ou madeira.",
+        store: "",
+        url: "https://br.shp.ee/sDsiDT1g",
+        image: "/quadros.jpeg",
+    },
+
+    {
+        name: "Rack TV Bancada Kent 55 Polegadas",
+        description: "Rack TV bancada madeira maciça com 4 gavetas e 2 nichos, estilo rústico. Disponível em cinza, branco madeirado e madeirado.",
+        store: "",
+        url: "https://br.shp.ee/tSnYYwV4",
+        image: "/rack-kent.jpeg",
+    },
+    {
+        name: "Rack 2 Portas Ditália R-606 Branco",
+        description: "Rack para TV com 2 portas, estilo clean e moderno, cor branco.",
+        store: "",
+        url: "https://br.shp.ee/dSiwNumk",
+        image: "/rack-ditalia.jpeg",
+    },
+
+    {
+        name: "Kit Colcha Boutis Dupla Face Nicole",
+        description: "Colcha casal dupla face estampada com flores, tecido leve, macio e resistente. Casa Riachuelo.",
+        store: "",
+        url: "https://www.riachuelo.com.br/produto/kit-colcha-boutis-dupla-face-nicole-casa-riachuelo-16223276_sku_sku_casal_multicor",
+        image: "/colcha.png",
+    },
+
+    {
+        name: "Tapete Malibu",
+        description: "Tapete Malibu com design moderno e sofisticado, material resistente e textura agradável. Disponível em 150x200cm e 200x300cm.",
+        store: "",
+        url: "https://www.riachuelo.com.br/produto/tapete-malibu-150x200cm-azul-casa-riachuelo-16309758001_sku_sku_150-x-200-cm_azul",
+        image: "/tapete-malibu.png",
+    },
+
+    {
+        name: "Porta Detergente Soft Touch de Cerâmica Nude",
+        description: "Porta detergente líquido de cerâmica nude 380ml com acabamento soft touch. Design moderno para a cozinha.",
+        store: "",
+        url: "https://br.shp.ee/3mPdaEZX",
+        image: "/porta-detergente.jpeg",
+    },
+   
     {
         name: "Sanduicheira",
         description: "Sanduicheira para cafés da manhã e lanches práticos.",

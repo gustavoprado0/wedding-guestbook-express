@@ -10,14 +10,7 @@ const gifts = [
         url: "https://lista.camicado.com.br/manuellaeenzo",
         image: "/lista-presentes.jpeg",
     },
-    {
-        name: "Aspirador de Pó Vertical Electrolux",
-        description: "Aspirador sem fio 2 em 1, prático para o dia a dia.",
-        store: "",
-        url: "https://loja.electrolux.com.br/aspirador-de-po-2-em-1-ergorapido-branco-erg21/p",
-        url2: "https://www.mercadolivre.com.br/p/MLB14155420?pdp_filters=item_id:MLB1719272833&matt_tool=38524122#origin=share&sid=share&wid=MLB1719272833&action=copy",
-        image: "/aspirador.jpeg",
-    },
+
     {
         name: "Purificador de Água Electrolux",
         description: "Purificador bivolt para água sempre fresquinha e filtrada.",
@@ -32,13 +25,7 @@ const gifts = [
         url: "https://m.magazineluiza.com.br/batedeira-planetaria-philco-preta-800w-12-velocidades-5-litros-pbp90a-103401154/p/240306400/ep/bapl/",
         image: "/batedeira.jpeg",
     },
-    {
-        name: "Forno Elétrico de Embutir 68L Midea",
-        description: "Forno elétrico de embutir com 68 litros de capacidade.",
-        store: "",
-        url: "https://www.casasbahia.com.br/forno-eletrico-de-embutir-68l-midea/p/1574901824",
-        image: "/forno-elétrico.jpeg",
-    },
+ 
     {
         name: "Secadora Electrolux 11kg",
         description: "Secadora de roupas 11kg branca 110V para facilitar o dia a dia.",
@@ -46,28 +33,7 @@ const gifts = [
         url: "https://www.casasbahia.com.br/secadora-electrolux-stl11-essential-care-11kg-branca-110v/p/55005281",
         image: "/secadora.jpeg",
     },
-
-    {
-        name: "Cama Box Baú Casal + Colchão Ortobom",
-        description: "Cama box baú casal bege com colchão Ortobom Airtech de molas ensacadas.",
-        store: "",
-        url: "https://www.madeiramadeira.com.br/cama-box-bau-casal-bege-e-colchao-ortobom-airtech-molas-ensacadas-368730425.html",
-        image: "/cama.jpeg",
-    },
-    {
-        name: "Geladeira Frost Free Electrolux 400L",
-        description: "Refrigerador duplex IF44S frost free 400L em inox.",
-        store: "",
-        url: "https://www.magazineluiza.com.br/geladeira-refrigerador-electrolux-frost-free-duplex-400l-if44s/p/241075900/ed/refr/",
-        image: "/geladeira.jpeg",
-    },
-    {
-        name: "Micro-ondas Philco 20L",
-        description: "Micro-ondas 20L com função tira-odor para o dia a dia.",
-        store: "",
-        url: "https://www.casasbahia.com.br/micro-ondas-pmo23eb-20l-com-funcao-tira-odor-philco/p/1521087602",
-        image: "/microondas.jpeg",
-    },
+ 
     {
         name: "Lavadora Electrolux Efficient 14,5kg",
         description: "Lavadora com cesto inox, Ultra Filter e tecnologia Jet Clean preta.",
@@ -75,27 +41,7 @@ const gifts = [
         url: "https://www.casasbahia.com.br/lavadora-de-roupas-electrolux-efficient-lep15-145kg-com-cesto-inox-ultra-filter-e-tecnologia-jet-clean-preta/p/55069208",
         image: "/maquina-lavar.jpeg",
     },
-    {
-        name: "Ferro de Passar",
-        description: "Ferro de passar roupa para deixar tudo sempre bem apresentado.",
-        store: "",
-        url: "https://a.co/d/03wQCe7M",
-        image: "/ferro-passar.jpeg",
-    },
-    {
-        name: "Fogão",
-        description: "Fogão para tornar a cozinha ainda mais completa.",
-        store: "",
-        url: "https://a.co/d/0gxOi3py",
-        image: "/fogao.jpeg",
-    },
-    {
-        name: "Airfryer",
-        description: "Airfryer para preparar refeições saudáveis e saborosas.",
-        store: "",
-        url: "https://a.co/d/0fBsVEnr",
-        image: "/airfreyr.jpeg",
-    },
+
     {
         name: "Tapete",
         description: "Tapete para deixar os ambientes mais aconchegantes.",
@@ -158,7 +104,7 @@ const gifts = [
         url: "https://br.shp.ee/3mPdaEZX",
         image: "/porta-detergente.jpeg",
     },
-   
+
     {
         name: "Sanduicheira",
         description: "Sanduicheira para cafés da manhã e lanches práticos.",
@@ -244,17 +190,7 @@ export const GiftSection = () => {
                                     Ver na loja
                                 </a>
 
-                                {gift.url2 && (
-                                    <a
-                                        href={gift.url2}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-1 text-accent text-xs font-sans font-medium hover:underline"
-                                    >
-                                        <ExternalLink size={12} />
-                                        Ver no Mercado Livre
-                                    </a>
-                                )}
+
                             </div>
                         </motion.div>
                     ))}

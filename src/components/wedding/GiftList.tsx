@@ -26,21 +26,6 @@ const gifts = [
         image: "/batedeira.jpeg",
     },
  
-    {
-        name: "Secadora Electrolux 11kg",
-        description: "Secadora de roupas 11kg branca 110V para facilitar o dia a dia.",
-        store: "",
-        url: "https://www.casasbahia.com.br/secadora-electrolux-stl11-essential-care-11kg-branca-110v/p/55005281",
-        image: "/secadora.jpeg",
-    },
- 
-    {
-        name: "Lavadora Electrolux Efficient 14,5kg",
-        description: "Lavadora com cesto inox, Ultra Filter e tecnologia Jet Clean preta.",
-        store: "",
-        url: "https://www.casasbahia.com.br/lavadora-de-roupas-electrolux-efficient-lep15-145kg-com-cesto-inox-ultra-filter-e-tecnologia-jet-clean-preta/p/55069208",
-        image: "/maquina-lavar.jpeg",
-    },
 
     {
         name: "Tapete",
@@ -50,13 +35,6 @@ const gifts = [
         image: "/tapete.jpeg",
     },
 
-    {
-        name: "Rack Suspenso Paris Off White",
-        description: "Rack suspenso para painel ou TV até 55 polegadas, 2 portas, 1,10m, cor Off White Paris.",
-        store: "",
-        url: "https://br.shp.ee/9MnqFQ3d",
-        image: "/rack.jpeg",
-    },
 
     {
         name: "Kit 6 Quadros Decorativos Personalizados",
@@ -73,13 +51,7 @@ const gifts = [
         url: "https://br.shp.ee/tSnYYwV4",
         image: "/rack-kent.jpeg",
     },
-    {
-        name: "Rack 2 Portas Ditália R-606 Branco",
-        description: "Rack para TV com 2 portas, estilo clean e moderno, cor branco.",
-        store: "",
-        url: "https://br.shp.ee/dSiwNumk",
-        image: "/rack-ditalia.jpeg",
-    },
+   
 
     {
         name: "Kit Colcha Boutis Dupla Face Nicole",
@@ -132,6 +104,13 @@ const gifts = [
         store: "",
         url: "https://www.zelo.com.br/edredom-zelo-malha-premium-casal-100-algodao-fio-penteado-p1011587",
         image: "/edredom.jpeg",
+    },
+    {
+        name: "Cabeceira Cama Box Casal 140cm Orgânica Bouclé",
+        description: "Cabeceira orgânica 140cm em tecido Bouclé. Disponível em Bouclé Off White e Bouclé Cinza.",
+        store: "",
+        url: "https://br.shp.ee/Frs36bkQ",
+        image: "/cabeceira.jpeg",
     },
 ];
 

@@ -12,6 +12,30 @@ const gifts = [
     },
 
     {
+        name: "Modelador de Cachos Taiff Curves",
+        description: "Modelador de cachos 1,25 cm com cabo giratório, preto, bivolt.",
+        store: "",
+        url: "https://www.casasbahia.com.br/modelador-de-cachos-taiff-curves-1-25-cm-com-cabo-giratorio-preto-210c-bivolt/p/12358010",
+        image: "/modelador-cachos.jpeg",
+    },
+
+    {
+        name: "Varal de Parede Mágico Retrátil",
+        description: "Varal de parede dobrável todo de alumínio, disponível em 60cm, 80cm e 100cm. Resistente à ferrugem, suporta até 5kg por varal.",
+        store: "",
+        url: "https://br.shp.ee/id4RVCix",
+        image: "/varal-parede.jpeg",
+    },
+
+    {
+        name: "Placas para Base Box Bouclé",
+        description: "Kit com 14 placas modulares em tecido Bouclé para transformar a base box. Disponível para casal padrão, queen e king, com 25cm de altura. Fixação por velcro.",
+        store: "",
+        url: "https://br.shp.ee/LR8nUyFg",
+        image: "/placas-base-box.jpeg",
+    },
+
+    {
         name: "Purificador de Água Electrolux",
         description: "Purificador bivolt para água sempre fresquinha e filtrada.",
         store: "",
